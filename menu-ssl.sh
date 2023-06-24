@@ -40,8 +40,8 @@ echo -e "\E[0;100;33m       • shadowsocks-libev Install •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e " [\e[36m•5\e[0m] Install shadowsocks-libev "
-echo -e " [\e[36m•6\e[0m] Stop shadowsocks-libev "
-echo -e " [\e[36m•7\e[0m] Start shadowsocks-libev "
+#echo -e " [\e[36m•6\e[0m] Stop shadowsocks-libev "
+#echo -e " [\e[36m•7\e[0m] Start shadowsocks-libev "
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
@@ -58,9 +58,9 @@ case $opt in
 2) clear ; renewss ; exit ;;
 3) clear ; delss ; exit ;;
 4) clear ; cekss ; exit ;;
-5) wget https://raw.githubusercontent.com/Jengkolonline/shadowsocks-libev/main/sodosok.sh && chmod +x sodosok.sh && ./sodosok.sh ; exit ;;
-6) systemctl stop shadowsocks-libev.service ; exit ;;
-7) systemctl start shadowsocks-libev.service ; exit ;;
+5) clear ; wget https://raw.githubusercontent.com/Jengkolonline/shadowsocks-libev/main/sodosok.sh && chmod +x sodosok.sh && ./sodosok.sh ; exit ;;
+#10) clear ; systemctl stop shadowsocks-libev.service ; exit ;;
+#10) clear ; systemctl start shadowsocks-libev.service ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;
