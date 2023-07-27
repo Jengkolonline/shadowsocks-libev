@@ -50,7 +50,7 @@ http=3443
 else
 http="$((lastport2+1))"
 fi
-source /var/lib/bzstorevpn/ipvps.conf
+source /var/lib/SIJA/ipvps.conf
 if [[ "$IP2" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
